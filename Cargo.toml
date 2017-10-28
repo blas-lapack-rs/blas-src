@@ -1,0 +1,29 @@
+[package]
+name = "blas-src"
+version = "0.1.0"
+license = "Apache-2.0/MIT"
+authors = ["Ivan Ukhov <ivan.ukhov@gmail.com>"]
+description = "The package provides a BLAS implementation of choice."
+documentation = "https://docs.rs/blas-src"
+homepage = "https://github.com/stainless-steel/blas-src"
+repository = "https://github.com/stainless-steel/blas-src"
+readme = "README.md"
+categories = ["science"]
+keywords = ["linear-algebra"]
+
+[features]
+accelerate = ["accelerate-src"]
+netlib = ["netlib-src"]
+openblas = ["openblas-src"]
+
+[dependencies.accelerate-src]
+version = "0.3"
+optional = true
+
+[dependencies.netlib-src]
+version = "0.7"
+optional = true
+
+[dependencies.openblas-src]
+version = "0.5"
+optional = true
