@@ -1,4 +1,9 @@
-//! [BLAS][blas] implementation of choice.
+//! [BLAS][BLAS] implementation of choice.
+//!
+//! Note that this package does not contain any functionality other than
+//! compiling (if necessary) and linking to the chosen implementation. Bindings
+//! are available in [`blas-sys`][blas-sys], and wrappers are available in
+//! [`blas`][blas].
 //!
 //! ## Configuration
 //!
@@ -17,8 +22,11 @@
 //! blas-src = { version = "0.1", features = ["openblas"] }
 //! ```
 //!
+//! [BLAS]: https://en.wikipedia.org/wiki/Basic_Linear_Algebra_Subprograms
+//! [blas-sys]: https://crates.io/crates/blas-sys
+//! [blas]: https://crates.io/crates/blas
+//!
 //! [accelerate]: https://developer.apple.com/reference/accelerate
-//! [blas]: https://en.wikipedia.org/wiki/Basic_Linear_Algebra_Subprograms
 //! [netlib]: http://www.netlib.org/
 //! [openblas]: http://www.openblas.net/
 
