@@ -19,6 +19,12 @@ blas-src = { version = "0.1", features = ["netlib"] }
 blas-src = { version = "0.1", features = ["openblas"] }
 ```
 
+## Contribution
+
+Your contribution is highly appreciated. Do not hesitate to open an issue or a
+pull request. Note that any contribution submitted for inclusion in the project
+will be licensed according to the terms given in [LICENSE.md](LICENSE.md).
+
 [blas]: https://en.wikipedia.org/wiki/Basic_Linear_Algebra_Subprograms
 
 [build-img]: https://travis-ci.org/stainless-steel/blas-src.svg?branch=master
