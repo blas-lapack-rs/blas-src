@@ -22,7 +22,7 @@ matrix:
       env: FEATURE=accelerate
 
 before_install:
-  - curl https://stainless-steel.github.io/travis/fortran.sh | bash
+  - curl https://blas-lapack-rs.github.io/travis/fortran.sh | bash
 
 script:
   - cargo test -vv --features=$FEATURE
