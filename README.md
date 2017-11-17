@@ -1,11 +1,7 @@
 # blas-src [![Package][package-img]][package-url] [![Documentation][documentation-img]][documentation-url] [![Build][build-img]][build-url]
 
-The packages provides a [BLAS] implementation of choice.
-
-Note that this package does not contain any functionality other than compiling
-(if necessary) and linking to the chosen implementation. Bindings are available
-in [`blas-sys`][crate-blas-sys], and wrappers are available in
-[`blas`][crate-blas].
+The packages provides a [BLAS] implementation of choice. The usage of the
+package is explained [here][usage].
 
 ## Configuration
 
@@ -30,16 +26,14 @@ Your contribution is highly appreciated. Do not hesitate to open an issue or a
 pull request. Note that any contribution submitted for inclusion in the project
 will be licensed according to the terms given in [LICENSE.md](LICENSE.md).
 
-[blas]: https://en.wikipedia.org/wiki/Basic_Linear_Algebra_Subprograms
-[crate-blas-sys]: https://crates.io/crates/blas-sys
-[crate-blas]: https://crates.io/crates/blas
-
 [accelerate]: https://developer.apple.com/reference/accelerate
+[blas]: https://en.wikipedia.org/wiki/BLAS
 [netlib]: http://www.netlib.org/
 [openblas]: http://www.openblas.net/
+[usage]: https://blas-lapack-rs.github.io/usage
 
-[build-img]: https://travis-ci.org/stainless-steel/blas-src.svg?branch=master
-[build-url]: https://travis-ci.org/stainless-steel/blas-src
+[build-img]: https://travis-ci.org/blas-lapack-rs/blas-src.svg?branch=master
+[build-url]: https://travis-ci.org/blas-lapack-rs/blas-src
 [documentation-img]: https://docs.rs/blas-src/badge.svg
 [documentation-url]: https://docs.rs/blas-src
 [package-img]: https://img.shields.io/crates/v/blas-src.svg
