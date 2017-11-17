@@ -1,4 +1,4 @@
-//! [BLAS] implementation of choice
+//! [BLAS] implementation of choice.
 //!
 //! The usage of the package is explained [here][usage].
 //!
