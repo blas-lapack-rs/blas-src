@@ -1,6 +1,6 @@
 # blas-src [![Package][package-img]][package-url] [![Documentation][documentation-img]][documentation-url] [![Build][build-img]][build-url]
 
-The packages provides a [BLAS] implementation of choice.
+The packages provides a [BLAS] source of choice.
 
 The usage of the package is explained [here][usage].
 
