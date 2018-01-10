@@ -7,18 +7,18 @@
 //! The following implementations are available:
 //!
 //! * `accelerate`, which is the one in the [Accelerate] framework (macOS only),
+//! * `intel-mkl`, which is the one in [Intel MKL],
 //! * `netlib`, which is the reference one by [Netlib], and
 //! * `openblas`, which is the one in [OpenBLAS].
-//! * `intel-mkl`, which is the one in [Intel MKL].
 //!
 //! An implementation can be chosen as follows:
 //!
 //! ```toml
 //! [dependencies]
 //! blas-src = { version = "0.1", features = ["accelerate"] }
+//! blas-src = { version = "0.1", features = ["intel-mkl"] }
 //! blas-src = { version = "0.1", features = ["netlib"] }
 //! blas-src = { version = "0.1", features = ["openblas"] }
-//! blas-src = { version = "0.1", features = ["intel-mkl"] }
 //! ```
 //!
 //! [accelerate]: https://developer.apple.com/reference/accelerate
@@ -33,11 +33,11 @@
 #[cfg(feature = "accelerate")]
 extern crate accelerate_src as raw;
 
+#[cfg(feature = "intel-mkl")]
+extern crate intel_mkl_src as raw;
+
 #[cfg(feature = "netlib")]
 extern crate netlib_src as raw;
 
 #[cfg(feature = "openblas")]
 extern crate openblas_src as raw;
-
-#[cfg(feature = "intel-mkl")]
-extern crate intel_mkl_src as raw;
