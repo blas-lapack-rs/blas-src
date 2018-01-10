@@ -15,6 +15,7 @@ keywords = ["linear-algebra"]
 accelerate = ["accelerate-src"]
 netlib = ["netlib-src"]
 openblas = ["openblas-src"]
+intel-mkl = ["intel-mkl-src"]
 
 [dependencies.accelerate-src]
 version = "0.3"
@@ -26,4 +27,8 @@ optional = true
 
 [dependencies.openblas-src]
 version = "0.5"
+optional = true
+
+[dependencies.intel-mkl-src]
+version = "0.2"
 optional = true
