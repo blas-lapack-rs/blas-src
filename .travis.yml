@@ -15,6 +15,7 @@ env:
     - FEATURE=accelerate
     - FEATURE=netlib
     - FEATURE=openblas
+    - FEATURE=intel-mkl
 
 matrix:
   exclude:
