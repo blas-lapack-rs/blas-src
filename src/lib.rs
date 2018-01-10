@@ -23,9 +23,9 @@
 //!
 //! [accelerate]: https://developer.apple.com/reference/accelerate
 //! [blas]: https://en.wikipedia.org/wiki/BLAS
+//! [intel mkl]: https://software.intel.com/en-us/mkl
 //! [netlib]: http://www.netlib.org/
 //! [openblas]: http://www.openblas.net/
-//! [intel mkl]: https://software.intel.com/en-us/mkl
 //! [usage]: https://blas-lapack-rs.github.io/usage
 
 #![no_std]
