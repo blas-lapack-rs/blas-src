@@ -2,7 +2,10 @@
 name = "blas-src"
 version = "0.1.2"
 license = "Apache-2.0/MIT"
-authors = ["Ivan Ukhov <ivan.ukhov@gmail.com>"]
+authors = [
+    "Ivan Ukhov <ivan.ukhov@gmail.com>",
+    "Toshiki Teramura <toshiki.teramura@gmail.com>",
+]
 description = "The package provides a BLAS source of choice."
 documentation = "https://docs.rs/blas-src"
 homepage = "https://github.com/blas-lapack-rs/blas-src"
