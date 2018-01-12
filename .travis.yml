@@ -13,9 +13,9 @@ rust:
 env:
   matrix:
     - FEATURE=accelerate
+    - FEATURE=intel-mkl
     - FEATURE=netlib
     - FEATURE=openblas
-    - FEATURE=intel-mkl
 
 matrix:
   exclude:
