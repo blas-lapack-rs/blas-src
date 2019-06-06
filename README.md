@@ -17,10 +17,10 @@ An implementation can be chosen as follows:
 
 ```toml
 [dependencies]
-blas-src = { version = "0.2", features = ["accelerate"] }
-blas-src = { version = "0.2", features = ["intel-mkl"] }
-blas-src = { version = "0.2", features = ["netlib"] }
-blas-src = { version = "0.2", features = ["openblas"] }
+blas-src = { version = "0.3", features = ["accelerate"] }
+blas-src = { version = "0.3", features = ["intel-mkl"] }
+blas-src = { version = "0.3", features = ["netlib"] }
+blas-src = { version = "0.3", features = ["openblas"] }
 ```
 
 ## Contribution
