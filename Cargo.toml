@@ -4,6 +4,7 @@ version = "0.3.0"
 license = "Apache-2.0/MIT"
 authors = [
     "Ivan Ukhov <ivan.ukhov@gmail.com>",
+    "Stefan Kroboth <stefan.kroboth@gmail.com>",
     "Toshiki Teramura <toshiki.teramura@gmail.com>",
 ]
 description = "The package provides a BLAS source of choice."
