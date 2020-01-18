@@ -14,13 +14,13 @@ env:
     - FEATURE=openblas
 
 matrix:
-  exclude:
-    - os: linux
-      env: FEATURE=accelerate
   include:
     - os: linux
     - os: osx
       env: CC=gcc-9 FC=gfortran-9 LIBRARY_PATH=/usr/local/opt/gcc/lib/gcc/9
+  exclude:
+    - os: linux
+      env: FEATURE=accelerate
 
 before_install:
   - gfortran --version
