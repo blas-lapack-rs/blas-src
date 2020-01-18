@@ -15,10 +15,10 @@
 //!
 //! ```toml
 //! [dependencies]
-//! blas-src = { version = "0.4", features = ["accelerate"] }
-//! blas-src = { version = "0.4", features = ["intel-mkl"] }
-//! blas-src = { version = "0.4", features = ["netlib"] }
-//! blas-src = { version = "0.4", features = ["openblas"] }
+//! blas-src = { version = "0.5", features = ["accelerate"] }
+//! blas-src = { version = "0.5", features = ["intel-mkl"] }
+//! blas-src = { version = "0.5", features = ["netlib"] }
+//! blas-src = { version = "0.5", features = ["openblas"] }
 //! ```
 //!
 //! [accelerate]: https://developer.apple.com/reference/accelerate
