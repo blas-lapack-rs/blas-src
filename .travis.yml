@@ -18,12 +18,16 @@ env:
     - FEATURE=openblas
 
 matrix:
+  include:
+    - os: linux
+    - os: osx
+      env: CC=gcc-9 FC=gfortran-9 LIBRARY_PATH=/usr/local/opt/gcc/lib/gcc/9
   exclude:
     - os: linux
       env: FEATURE=accelerate
 
 before_install:
-  - curl https://blas-lapack-rs.github.io/travis/fortran.sh | bash
+  - gfortran --version
 
 script:
   - cargo test -vv --features=$FEATURE
@@ -32,6 +36,9 @@ addons:
   apt:
     packages:
       - gfortran
+  homebrew:
+    packages:
+      - gcc@9
 
 notifications:
   email: false
