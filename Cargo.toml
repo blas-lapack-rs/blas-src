@@ -26,11 +26,11 @@ version = "0.3"
 optional = true
 
 [dependencies.intel-mkl-src]
-version = "0.4"
+version = "0.5"
 optional = true
 
 [dependencies.netlib-src]
-version = "0.7"
+version = "0.8"
 optional = true
 
 [dependencies.openblas-src]
