@@ -11,6 +11,7 @@ rust:
 
 env:
   - FEATURE=accelerate
+  - FEATURE=blis
   - FEATURE=intel-mkl
   - FEATURE=netlib
   - FEATURE=openblas
