@@ -9,7 +9,7 @@ The usage of the package is explained [here][usage].
 The following implementations are available:
 
 * `accelerate`, which is the one in the [Accelerate] framework (macOS only),
-* `blis`, which is the one in [BLIS].
+* `blis`, which is the one in [BLIS],
 * `intel-mkl`, which is the one in [Intel MKL],
 * `netlib`, which is the reference one by [Netlib], and
 * `openblas`, which is the one in [OpenBLAS].
