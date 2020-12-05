@@ -1,6 +1,6 @@
 //! [BLAS] source of choice.
 //!
-//! The usage of the package is explained [here][usage].
+//! ## [Architecture]
 //!
 //! ## Configuration
 //!
@@ -23,13 +23,14 @@
 //! blas-src = { version = "0.7", features = ["openblas"] }
 //! ```
 //!
-//! [accelerate]: https://developer.apple.com/reference/accelerate
+//! [architecture]: https://blas-lapack-rs.github.io/architecture
 //! [blas]: https://en.wikipedia.org/wiki/BLAS
+//!
+//! [accelerate]: https://developer.apple.com/reference/accelerate
 //! [blis]: https://github.com/flame/blis
 //! [intel mkl]: https://software.intel.com/en-us/mkl
 //! [netlib]: http://www.netlib.org/
 //! [openblas]: http://www.openblas.net/
-//! [usage]: https://blas-lapack-rs.github.io/usage
 
 #![no_std]
 

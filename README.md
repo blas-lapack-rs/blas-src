@@ -2,7 +2,7 @@
 
 The packages provides a [BLAS] source of choice.
 
-The usage of the package is explained [here][usage].
+## [Architecture]
 
 ## Configuration
 
@@ -31,13 +31,14 @@ Your contribution is highly appreciated. Do not hesitate to open an issue or a
 pull request. Note that any contribution submitted for inclusion in the project
 will be licensed according to the terms given in [LICENSE.md](LICENSE.md).
 
-[accelerate]: https://developer.apple.com/reference/accelerate
+[architecture]: https://blas-lapack-rs.github.io/architecture
 [blas]: https://en.wikipedia.org/wiki/BLAS
+
+[accelerate]: https://developer.apple.com/reference/accelerate
 [blis]: https://github.com/flame/blis
 [intel mkl]: https://software.intel.com/en-us/mkl
 [netlib]: http://www.netlib.org/
 [openblas]: http://www.openblas.net/
-[usage]: https://blas-lapack-rs.github.io/usage
 
 [build-img]: https://travis-ci.org/blas-lapack-rs/blas-src.svg?branch=master
 [build-url]: https://travis-ci.org/blas-lapack-rs/blas-src
