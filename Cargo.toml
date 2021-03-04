@@ -39,5 +39,5 @@ version = "0.8"
 optional = true
 
 [dependencies.openblas-src]
-version = "0.9"
+version = "0.10"
 optional = true
