@@ -16,11 +16,11 @@
 //!
 //! ```toml
 //! [dependencies]
-//! blas-src = { version = "0.7", features = ["accelerate"] }
-//! blas-src = { version = "0.7", features = ["blis"] }
-//! blas-src = { version = "0.7", features = ["intel-mkl"] }
-//! blas-src = { version = "0.7", features = ["netlib"] }
-//! blas-src = { version = "0.7", features = ["openblas"] }
+//! blas-src = { version = "0.8", features = ["accelerate"] }
+//! blas-src = { version = "0.8", features = ["blis"] }
+//! blas-src = { version = "0.8", features = ["intel-mkl"] }
+//! blas-src = { version = "0.8", features = ["netlib"] }
+//! blas-src = { version = "0.8", features = ["openblas"] }
 //! ```
 //!
 //! [architecture]: https://blas-lapack-rs.github.io/architecture
