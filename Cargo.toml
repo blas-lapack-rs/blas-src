@@ -7,6 +7,7 @@ authors = [
     "Jed Brown <jed@jedbrown.org>",
     "Stefan Kroboth <stefan.kroboth@gmail.com>",
     "Toshiki Teramura <toshiki.teramura@gmail.com>",
+    "bluss",
 ]
 description = "The package provides a BLAS source of choice."
 documentation = "https://docs.rs/blas-src"
