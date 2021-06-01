@@ -33,7 +33,7 @@ version = "0.2"
 optional = true
 
 [dependencies.intel-mkl-src]
-version = "0.5"
+version = "0.6"
 optional = true
 
 [dependencies.netlib-src]
