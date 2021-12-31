@@ -24,6 +24,7 @@ jobs:
           export CC=gcc-9
           export FC=gfortran-9
           export LIBRARY_PATH=/usr/local/opt/gcc/lib/gcc/9
+          brew install gcc@9
       - name: Run the test suite
         uses: actions-rs/cargo@v1
         with:
