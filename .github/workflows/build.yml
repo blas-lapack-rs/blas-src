@@ -18,6 +18,7 @@ jobs:
           - netlib
           - openblas
     steps:
+      - uses: actions/checkout@v1
       - name: Configure the environment
         run: |
           export CC=gcc-9
@@ -41,6 +42,7 @@ jobs:
           - netlib
           - openblas
     steps:
+      - uses: actions/checkout@v1
       - name: Configure the environment
         run: |
           apt update
