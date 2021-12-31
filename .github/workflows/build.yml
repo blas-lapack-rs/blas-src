@@ -19,18 +19,16 @@ jobs:
           - openblas
     steps:
       - uses: actions/checkout@v1
-      - name: Configure the environment
-        run: |
-          export CC=gcc-9
-          export FC=gfortran-9
-          export LIBRARY_PATH=/usr/local/opt/gcc/lib/gcc/9
-          brew install gcc@9
       - name: Run the test suite
         uses: actions-rs/cargo@v1
         with:
           command: test
           args: >
             --features=${{ matrix.feature }}
+        env:
+          CC: gcc-9
+          FC: gfortran-9
+          LIBRARY_PATH: /usr/local/opt/gcc/lib/gcc/9
 
   ubuntu:
     name: Ubuntu
