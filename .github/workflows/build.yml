@@ -1,0 +1,53 @@
+name: build
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  macos:
+    name: MacOS
+    runs-on: macos-10.15
+    strategy:
+      matrix:
+        feature:
+          - accelerate
+          - blis
+          - intel-mkl
+          - netlib
+          - openblas
+    steps:
+      - name: Configure the environment
+        run: |
+          export CC=gcc-9
+          export FC=gfortran-9
+          export LIBRARY_PATH=/usr/local/opt/gcc/lib/gcc/9
+      - name: Run the test suite
+        uses: actions-rs/cargo@v1
+        with:
+          command: test
+          args: >
+            --features=${{ matrix.feature }}
+
+  ubuntu:
+    name: Ubuntu
+    runs-on: ubuntu-18.04
+    strategy:
+      matrix:
+        feature:
+          - blis
+          - intel-mkl
+          - netlib
+          - openblas
+    steps:
+      - name: Configure the environment
+        run: |
+          apt update
+          apt install -y gfortran
+      - name: Run the test suite
+        uses: actions-rs/cargo@v1
+        with:
+          command: test
+          args: >
+            --features=${{ matrix.feature }}
