@@ -4,7 +4,10 @@ on:
   push:
     branches:
       - master
-  workflow_dispatch: {}
+  pull_request:
+    branches:
+      - master
+  workflow_dispatch:
 
 jobs:
   macos:
@@ -29,7 +32,7 @@ jobs:
         env:
           CC: gcc-9
           FC: gfortran-9
-          LIBRARY_PATH: /usr/local/opt/gcc/lib/gcc/9
+          LIBRARY_PATH: /usr/local/opt/gcc@9/lib/gcc/9
 
   ubuntu:
     name: Ubuntu
