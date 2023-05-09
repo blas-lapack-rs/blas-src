@@ -11,6 +11,7 @@
 //! * `intel-mkl`, which is the one in [Intel MKL],
 //! * `netlib`, which is the reference one by [Netlib], and
 //! * `openblas`, which is the one in [OpenBLAS].
+//! * `r`, which is the one in [R].
 //!
 //! An implementation can be chosen as follows:
 //!
