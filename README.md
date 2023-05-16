@@ -11,8 +11,8 @@ The following implementations are available:
 * `accelerate`, which is the one in the [Accelerate] framework (macOS only),
 * `blis`, which is the one in [BLIS],
 * `intel-mkl`, which is the one in [Intel MKL],
-* `netlib`, which is the reference one by [Netlib], and
-* `openblas`, which is the one in [OpenBLAS].
+* `netlib`, which is the reference one by [Netlib],
+* `openblas`, which is the one in [OpenBLAS], and
 * `r`, which is the one in [R].
 
 An implementation can be chosen as follows:
@@ -39,8 +39,8 @@ will be licensed according to the terms given in [LICENSE.md](LICENSE.md).
 [accelerate]: https://developer.apple.com/reference/accelerate
 [blis]: https://github.com/flame/blis
 [intel mkl]: https://software.intel.com/en-us/mkl
-[netlib]: http://www.netlib.org/
-[openblas]: http://www.openblas.net/
+[netlib]: https://www.netlib.org/
+[openblas]: https://www.openblas.net/
 [r]: https://cran.r-project.org
 
 [build-img]: https://github.com/blas-lapack-rs/blas-src/actions/workflows/build.yml/badge.svg

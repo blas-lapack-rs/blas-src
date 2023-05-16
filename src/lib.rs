@@ -31,8 +31,8 @@
 //! [accelerate]: https://developer.apple.com/reference/accelerate
 //! [blis]: https://github.com/flame/blis
 //! [intel mkl]: https://software.intel.com/en-us/mkl
-//! [netlib]: http://www.netlib.org/
-//! [openblas]: http://www.openblas.net/
+//! [netlib]: https://www.netlib.org/
+//! [openblas]: https://www.openblas.net/
 //! [R]: https://cran.r-project.org
 
 #![no_std]
