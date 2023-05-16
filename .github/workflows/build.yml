@@ -26,8 +26,8 @@ jobs:
       - name: Setup openblas and blis
         run: |
           brew install openblas
-	  brew install blis
-       - name: Run the test suite
+          brew install blis
+      - name: Run the test suite
         uses: actions-rs/cargo@v1
         with:
           command: test
@@ -52,4 +52,3 @@ jobs:
           command: test
           args: >
             --features=${{ matrix.feature }}
-
