@@ -24,7 +24,7 @@ blas-src = { version = "0.8", features = ["blis"] }
 blas-src = { version = "0.8", features = ["intel-mkl"] }
 blas-src = { version = "0.8", features = ["netlib"] }
 blas-src = { version = "0.8", features = ["openblas"] }
-r-src = { version = "0.8", features = ["r"] }
+blas-src = { version = "0.8", features = ["r"] }
 ```
 
 ## Contribution

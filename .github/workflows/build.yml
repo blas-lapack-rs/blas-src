@@ -33,6 +33,10 @@ jobs:
           command: test
           args: >
             --features=${{ matrix.feature }}
+        env:
+          CC: gcc-13
+	  FC: gfortran-13
+	  LIBRARY_PATH: /usr/local/opt/gcc@13/lib/gcc/13
 
   ubuntu:
     name: Ubuntu

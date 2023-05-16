@@ -9,8 +9,8 @@
 //! * `accelerate`, which is the one in the [Accelerate] framework (macOS only),
 //! * `blis`, which is the one in [BLIS],
 //! * `intel-mkl`, which is the one in [Intel MKL],
-//! * `netlib`, which is the reference one by [Netlib], and
-//! * `openblas`, which is the one in [OpenBLAS].
+//! * `netlib`, which is the reference one by [Netlib],
+//! * `openblas`, which is the one in [OpenBLAS], and
 //! * `r`, which is the one in [R].
 //!
 //! An implementation can be chosen as follows:
