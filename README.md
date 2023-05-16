@@ -43,7 +43,7 @@ will be licensed according to the terms given in [LICENSE.md](LICENSE.md).
 [openblas]: http://www.openblas.net/
 [r]: https://cran.r-project.org
 
-[build-img]: https://github.com/blas-lapack-rs/blas-src/workflows/build/badge.svg
+[build-img]: https://github.com/blas-lapack-rs/blas-src/actions/workflows/build.yml/badge.svg
 [build-url]: https://github.com/blas-lapack-rs/blas-src/actions/workflows/build.yml
 [documentation-img]: https://docs.rs/blas-src/badge.svg
 [documentation-url]: https://docs.rs/blas-src
