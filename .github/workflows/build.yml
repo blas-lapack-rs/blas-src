@@ -42,7 +42,6 @@ jobs:
           - openblas
     steps:
       - uses: actions/checkout@v3
-      - name: Configure the environment
       - name: Run the test suite
         uses: actions-rs/cargo@v1
         with:
