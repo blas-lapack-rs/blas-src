@@ -16,15 +16,40 @@ jobs:
     strategy:
       matrix:
         feature:
+          - accelerate
+          - blis
+          - intel-mkl
+          - netlib
           - openblas
     steps:
       - uses: actions/checkout@v3
-      - name: Setup openblas
+      - name: Setup openblas and blis
         run: |
           brew install openblas
+	  brew install blis
+       - name: Run the test suite
+        uses: actions-rs/cargo@v1
+        with:
+          command: test
+          args: >
+            --features=${{ matrix.feature }}
+
+  ubuntu:
+    name: Ubuntu
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        feature:
+          - blis
+          - intel-mkl
+          - netlib
+          - openblas
+    steps:
+      - uses: actions/checkout@v3
       - name: Run the test suite
         uses: actions-rs/cargo@v1
         with:
           command: test
           args: >
             --features=${{ matrix.feature }}
+
