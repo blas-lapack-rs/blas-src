@@ -13,6 +13,7 @@ The following implementations are available:
 * `intel-mkl`, which is the one in [Intel MKL],
 * `netlib`, which is the reference one by [Netlib], and
 * `openblas`, which is the one in [OpenBLAS].
+* `r`, which is the one in [R].
 
 An implementation can be chosen as follows:
 
@@ -23,6 +24,7 @@ blas-src = { version = "0.8", features = ["blis"] }
 blas-src = { version = "0.8", features = ["intel-mkl"] }
 blas-src = { version = "0.8", features = ["netlib"] }
 blas-src = { version = "0.8", features = ["openblas"] }
+r-src = { version = "0.8", features = ["r"] }
 ```
 
 ## Contribution
@@ -39,6 +41,7 @@ will be licensed according to the terms given in [LICENSE.md](LICENSE.md).
 [intel mkl]: https://software.intel.com/en-us/mkl
 [netlib]: http://www.netlib.org/
 [openblas]: http://www.openblas.net/
+[r]: https://cran.r-project.org
 
 [build-img]: https://github.com/blas-lapack-rs/blas-src/workflows/build/badge.svg
 [build-url]: https://github.com/blas-lapack-rs/blas-src/actions/workflows/build.yml

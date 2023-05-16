@@ -12,7 +12,7 @@ on:
 jobs:
   macos:
     name: macOS
-    runs-on: macos-10.15
+    runs-on: macos-latest
     strategy:
       matrix:
         feature:
@@ -22,21 +22,17 @@ jobs:
           - netlib
           - openblas
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v3
       - name: Run the test suite
         uses: actions-rs/cargo@v1
         with:
           command: test
           args: >
             --features=${{ matrix.feature }}
-        env:
-          CC: gcc-9
-          FC: gfortran-9
-          LIBRARY_PATH: /usr/local/opt/gcc@9/lib/gcc/9
 
   ubuntu:
     name: Ubuntu
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     strategy:
       matrix:
         feature:
@@ -45,11 +41,8 @@ jobs:
           - netlib
           - openblas
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v3
       - name: Configure the environment
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y gfortran
       - name: Run the test suite
         uses: actions-rs/cargo@v1
         with:

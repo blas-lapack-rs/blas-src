@@ -23,6 +23,7 @@ blis = ["blis-src"]
 intel-mkl = ["intel-mkl-src"]
 netlib = ["netlib-src"]
 openblas = ["openblas-src"]
+r = ["r-src"]
 
 [dependencies.accelerate-src]
 version = "0.3"
@@ -42,4 +43,8 @@ optional = true
 
 [dependencies.openblas-src]
 version = "0.10"
+optional = true
+
+[dependencies.r-src]
+version = "0.1"
 optional = true
