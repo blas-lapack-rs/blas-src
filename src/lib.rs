@@ -9,20 +9,20 @@
 //! * `accelerate`, which is the one in the [Accelerate] framework (macOS only),
 //! * `blis`, which is the one in [BLIS],
 //! * `intel-mkl`, which is the one in [Intel MKL],
-//! * `netlib`, which is the reference one by [Netlib], and
-//! * `openblas`, which is the one in [OpenBLAS].
+//! * `netlib`, which is the reference one by [Netlib],
+//! * `openblas`, which is the one in [OpenBLAS], and
 //! * `r`, which is the one in [R].
 //!
 //! An implementation can be chosen as follows:
 //!
 //! ```toml
 //! [dependencies]
-//! blas-src = { version = "0.8", features = ["accelerate"] }
-//! blas-src = { version = "0.8", features = ["blis"] }
-//! blas-src = { version = "0.8", features = ["intel-mkl"] }
-//! blas-src = { version = "0.8", features = ["netlib"] }
-//! blas-src = { version = "0.8", features = ["openblas"] }
-//! blas-src = { version = "0.8", features = ["r"] }
+//! blas-src = { version = "0.9", features = ["accelerate"] }
+//! blas-src = { version = "0.9", features = ["blis"] }
+//! blas-src = { version = "0.9", features = ["intel-mkl"] }
+//! blas-src = { version = "0.9", features = ["netlib"] }
+//! blas-src = { version = "0.9", features = ["openblas"] }
+//! blas-src = { version = "0.9", features = ["r"] }
 //! ```
 //!
 //! [architecture]: https://blas-lapack-rs.github.io/architecture
