@@ -9,11 +9,16 @@ on:
       - main
   workflow_dispatch:
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
+  cancel-in-progress: true
+
 jobs:
   macos:
     name: macOS
     runs-on: macos-latest
     strategy:
+      fail-fast: false
       matrix:
         feature:
           - accelerate
@@ -23,16 +28,15 @@ jobs:
           - openblas
     steps:
       - uses: actions/checkout@v3
-      - run: brew install blis
       - uses: actions-rs/cargo@v1
         with:
           command: test
           args: >
             --features=${{ matrix.feature }}
         env:
-          CC: gcc-13
-          FC: gfortran-13
-          LIBRARY_PATH: /usr/local/opt/gcc@13/lib/gcc/13
+          CC: gcc-12
+          FC: gfortran-12
+          LIBRARY_PATH: /usr/local/opt/gcc@12/lib/gcc/12
 
   ubuntu:
     name: Ubuntu
