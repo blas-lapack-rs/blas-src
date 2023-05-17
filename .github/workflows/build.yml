@@ -3,10 +3,10 @@ name: build
 on:
   push:
     branches:
-      - master
+      - main
   pull_request:
     branches:
-      - master
+      - main
   workflow_dispatch:
 
 jobs:
@@ -23,11 +23,8 @@ jobs:
           - openblas
     steps:
       - uses: actions/checkout@v3
-      - name: Setup blis
-        run: |
-          brew install blis
-      - name: Run the test suite
-        uses: actions-rs/cargo@v1
+      - run: brew install blis
+      - uses: actions-rs/cargo@v1
         with:
           command: test
           args: >
@@ -49,8 +46,7 @@ jobs:
           - openblas
     steps:
       - uses: actions/checkout@v3
-      - name: Run the test suite
-        uses: actions-rs/cargo@v1
+      - uses: actions-rs/cargo@v1
         with:
           command: test
           args: >
