@@ -41,7 +41,7 @@ will be licensed according to the terms given in [LICENSE.md](LICENSE.md).
 [intel mkl]: https://software.intel.com/en-us/mkl
 [netlib]: https://www.netlib.org/
 [openblas]: https://www.openblas.net/
-[r]: https://cran.r-project.org
+[r]: https://cran.r-project.org/
 
 [build-img]: https://github.com/blas-lapack-rs/blas-src/actions/workflows/build.yml/badge.svg
 [build-url]: https://github.com/blas-lapack-rs/blas-src/actions/workflows/build.yml

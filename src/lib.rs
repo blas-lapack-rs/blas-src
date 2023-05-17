@@ -33,7 +33,7 @@
 //! [intel mkl]: https://software.intel.com/en-us/mkl
 //! [netlib]: https://www.netlib.org/
 //! [openblas]: https://www.openblas.net/
-//! [R]: https://cran.r-project.org
+//! [r]: https://cran.r-project.org/
 
 #![no_std]
 
