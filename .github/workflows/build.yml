@@ -17,9 +17,8 @@ jobs:
   check:
     runs-on: macos-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: ructions/toolchain@v2
-        with: {toolchain: stable, components: "clippy, rustfmt"}
+      - uses: actions/checkout@v4
+      - run: rustup toolchain install stable --profile=minimal --component clippy --component rustfmt
       - run: cargo clippy -- -D warnings
       - run: cargo fmt --all -- --check
 
@@ -36,8 +35,7 @@ jobs:
           - openblas
     steps:
       - uses: actions/checkout@v4
-      - uses: ructions/toolchain@v2
-        with: {toolchain: stable}
+      - run: rustup toolchain install stable --profile=minimal
       - run: cargo test --features=${{ matrix.feature }}
         env:
           CC: gcc-12
@@ -55,6 +53,5 @@ jobs:
           - openblas
     steps:
       - uses: actions/checkout@v4
-      - uses: ructions/toolchain@v2
-        with: {toolchain: stable}
+      - run: rustup toolchain install stable --profile=minimal
       - run: cargo test --features=${{ matrix.feature }}
