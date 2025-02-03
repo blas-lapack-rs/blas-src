@@ -38,9 +38,9 @@ jobs:
       - run: rustup toolchain install stable --profile=minimal
       - run: cargo test --features=${{ matrix.feature }}
         env:
-          CC: gcc-12
-          FC: gfortran-12
-          LIBRARY_PATH: /usr/local/opt/gcc@12/lib/gcc/12
+          CC: gcc-13
+          FC: gfortran-13
+          LIBRARY_PATH: /usr/local/opt/gcc@13/lib/gcc/13
 
   test-ubuntu:
     runs-on: ubuntu-latest
