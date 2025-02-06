@@ -36,9 +36,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Install gcc@13 via Homebrew
-        run: brew install gcc@13
-
       - name: Export gcc@13 environment variables
         run: |
           echo "CC=$(brew --prefix gcc@13)/bin/gcc-13" >> $GITHUB_ENV
