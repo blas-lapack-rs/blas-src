@@ -38,7 +38,7 @@ jobs:
       - run: rustup toolchain install stable --profile=minimal
       - run: cargo test --features=${{ matrix.feature }}
         env:
-	  CC: "$(brew --prefix gcc@13)/bin/gcc"
+          CC: "$(brew --prefix gcc@13)/bin/gcc"
           FC: "$(brew --prefix gcc@13)/bin/gfortran"
           LIBRARY_PATH: "$(brew --prefix gcc@13)/lib/gcc/13"
 
