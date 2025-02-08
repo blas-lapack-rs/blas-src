@@ -1,7 +1,7 @@
 [package]
 name = "blas-src"
 version = "0.11.0"
-license = "Apache-2.0/MIT"
+license = "Apache-2.0 OR MIT"
 authors = [
     "Augusto Borges <borges.augustoar@gmail.com>",
     "Balasubramanian Narasimhan <b.naras@gmail.com>",
