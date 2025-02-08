@@ -1,6 +1,5 @@
 # Changelog
 
-## [0.11.0] - 2025-02-02
-### Updated
-- Now using `r-src` [v0.2.1]
+## Version 0.11.0 (February 8, 2025)
 
+* `r-src` updated to version 0.2.1.

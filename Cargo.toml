@@ -20,6 +20,9 @@ readme = "README.md"
 categories = ["science"]
 keywords = ["linear-algebra"]
 
+[package.metadata.docs.rs]
+changelog = "CHANGELOG.md"
+
 [features]
 accelerate = ["accelerate-src"]
 blis = ["blis-src"]
@@ -51,6 +54,3 @@ optional = true
 [dependencies.r-src]
 version = "0.2.1"
 optional = true
-
-[package.metadata.docs.rs]
-changelog = "CHANGELOG.md"
