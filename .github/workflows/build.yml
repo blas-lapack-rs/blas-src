@@ -35,18 +35,12 @@ jobs:
           - openblas
     steps:
       - uses: actions/checkout@v4
-
-      - name: Export gcc@13 environment variables
-        run: |
-          echo "CC=$(brew --prefix gcc@13)/bin/gcc-13" >> $GITHUB_ENV
-          echo "FC=$(brew --prefix gcc@13)/bin/gfortran-13" >> $GITHUB_ENV
-          echo "LIBRARY_PATH=$(brew --prefix gcc@13)/lib/gcc/13" >> $GITHUB_ENV
-
-      - name: Install Rust toolchain
-        run: rustup toolchain install stable --profile=minimal
-
-      - name: Run tests
-        run: cargo test --features=${{ matrix.feature }}
+      - run: |
+          echo "CC=$(brew --prefix gcc@13)/bin/gcc-13" >> "${GITHUB_ENV}"
+          echo "FC=$(brew --prefix gcc@13)/bin/gfortran-13" >> "${GITHUB_ENV}"
+          echo "LIBRARY_PATH=$(brew --prefix gcc@13)/lib/gcc/13" >> "${GITHUB_ENV}"
+      - run: rustup toolchain install stable --profile=minimal
+      - run: cargo test --features=${{ matrix.feature }}
 
   test-ubuntu:
     runs-on: ubuntu-latest
