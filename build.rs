@@ -1,18 +1,14 @@
-fn main() {
-    let features = ["accelerate", "blis", "intel-mkl", "netlib", "openblas", "r"];
-    let mut count = 0;
-    for feature in &features {
-        if std::env::var(format!(
-            "CARGO_FEATURE_{}",
-            feature.to_uppercase().replace('-', "_")
-        ))
-        .is_ok()
-        {
-            count += 1;
-        }
-    }
+const FEATURES: &[&str] = &["accelerate", "blis", "intel-mkl", "netlib", "openblas", "r"];
 
-    if count > 1 {
-        panic!("Only one BLAS implementation feature may be enabled at a time.");
+fn main() {
+    if FEATURES
+        .iter()
+        .map(|name| name.to_uppercase().replace('-', "_"))
+        .map(|name| format!("CARGO_FEATURE_{name}"))
+        .filter(|name| std::env::var(name).is_ok())
+        .count()
+        > 1
+    {
+        panic!("At most one BLAS implementation may be enabled at a time.");
     }
 }
