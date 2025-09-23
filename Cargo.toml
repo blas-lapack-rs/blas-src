@@ -1,6 +1,6 @@
 [package]
 name = "blas-src"
-version = "0.12.1"
+version = "0.13.0"
 edition = "2024"
 license = "Apache-2.0 OR MIT"
 authors = [
@@ -46,7 +46,7 @@ version = "0.8"
 optional = true
 
 [dependencies.netlib-src]
-version = "0.8"
+version = "0.9"
 optional = true
 
 [dependencies.openblas-src]
