@@ -46,7 +46,12 @@ extern crate accelerate_src as raw;
 #[cfg(feature = "blis")]
 extern crate blis_src as raw;
 
-#[cfg(feature = "intel-mkl")]
+#[cfg(any(
+    feature = "intel-mkl-dynamic-parallel",
+    feature = "intel-mkl-dynamic-sequential",
+    feature = "intel-mkl-static-parallel",
+    feature = "intel-mkl-static-sequential",
+))]
 extern crate intel_mkl_src as raw;
 
 #[cfg(feature = "netlib")]
