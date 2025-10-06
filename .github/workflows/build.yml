@@ -30,7 +30,7 @@ jobs:
         feature:
           - accelerate
           - blis
-          - intel-mkl
+          - intel-mkl-static-parallel
           - netlib
           - openblas
     steps:
@@ -48,7 +48,7 @@ jobs:
       matrix:
         feature:
           - blis
-          - intel-mkl
+          - intel-mkl-static-parallel
           - netlib
           - openblas
     steps:

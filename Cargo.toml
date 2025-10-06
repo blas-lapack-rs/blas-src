@@ -1,7 +1,7 @@
 [package]
 name = "blas-src"
-version = "0.13.0"
-edition = "2024"
+version = "0.14.0"
+edition = "2021"
 license = "Apache-2.0 OR MIT"
 authors = [
     "Augusto Borges <borges.augustoar@gmail.com>",
@@ -28,7 +28,10 @@ changelog = "CHANGELOG.md"
 [features]
 accelerate = ["accelerate-src"]
 blis = ["blis-src"]
-intel-mkl = ["intel-mkl-src"]
+intel-mkl-dynamic-parallel = ["intel-mkl-src/mkl-dynamic-lp64-iomp"]
+intel-mkl-dynamic-sequential = ["intel-mkl-src/mkl-dynamic-lp64-seq"]
+intel-mkl-static-parallel = ["intel-mkl-src/mkl-static-lp64-iomp"]
+intel-mkl-static-sequential = ["intel-mkl-src/mkl-static-lp64-seq"]
 netlib = ["netlib-src"]
 openblas = ["openblas-src"]
 r = ["r-src"]
